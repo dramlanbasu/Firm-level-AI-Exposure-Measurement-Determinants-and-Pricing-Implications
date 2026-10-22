@@ -1,3 +1,4 @@
+# Author: gvb17226 (Amlan Basu)
 """YAKE-based detection of the predefined AI terms, followed by Word2Vec labels.
 
 Install: pip install yake pandas nltk gensim tqdm openpyxl
