@@ -15,7 +15,7 @@ There are 2 codes,
 1. Yake_Similar_Keywords.py to extract nearest keywords.
 2. Keywords_label_1.py to count the number of each keywords, extract only the sentences that have the specified keywords, label the sentences in specific categories and count the number of sentences under each label.
 
-Before running the code make sure following modules are installed **(Use python 3)**,
+Before running the code make sure following modules are installed **(Use python3)**,
 1. pip install yake
 2. pip install pandas
 3. pip install nltk
