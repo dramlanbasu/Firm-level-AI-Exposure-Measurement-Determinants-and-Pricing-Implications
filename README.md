@@ -10,3 +10,17 @@ Keywords: Artificial Intelligence, AI Exposure, Earnings Conference Calls, YAKE,
 
 If you are using any of the codes please cite the paper
 Basu, Sakshi and Thapa, Chandra and Neupane, Biwesh and Basu, Amlan, Firm-level AI Exposure: Measurement, Determinants, and Pricing Implications (October 07, 2026). Available at SSRN: https://ssrn.com/abstract=7575518 or http://dx.doi.org/10.2139/ssrn.7575518
+
+There are 2 codes,
+1. Yake_Similar_Keywords.py to extract nearest keywords.
+2. Keywords_label_1.py to count the number of each keywords, extract only the sentences that have the specified keywords, label the sentences in specific categories and count the number of sentences under each label.
+
+Before running the code make sure following modules are installed **(Use pyhton)**,
+1. pip install yake
+2. pip install pandas
+3. pip install nltk
+4. pip install gensim
+5. pip install tqdm
+6. pip install openpyxl
+7. python -m nltk.downloader punkt punkt_tab
+8. **To use Word2Vec the weights must be downloaded from https://github.com/mmihaltz/word2vec-googlenews-vectors**
