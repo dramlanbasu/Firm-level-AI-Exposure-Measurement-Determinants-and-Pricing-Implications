@@ -8,7 +8,7 @@ from collections import defaultdict
 predefined_keywords = [
     "AI", "ML", "Machine Learning", "Artificial Intelligence", 
     "Deep Learning", "Neural Network", "Natural Language Processing", 
-    "NLP", "Large Language Model", "LLM", "Cognitive Computing", "Data Analytics", "Computer Vision"
+    "NLP", "Large Language Model", "LLM", "Cognitive Computing", "Data Analytics"
 ]
 
 # YAKE keyword extractor configuration
