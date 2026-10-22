@@ -1,3 +1,35 @@
+"""YAKE-based detection of the predefined AI terms, followed by Word2Vec labels.
+
+Install: pip install yake pandas nltk gensim tqdm openpyxl
+NLTK data: python -m nltk.downloader punkt punkt_tab
+Provide the Google News Word2Vec binary separately.
+"""
+import os
+import re
+from collections import Counter
+
+import yake
+import pandas as pd
+from nltk.tokenize import sent_tokenize
+from gensim.models import KeyedVectors
+from tqdm import tqdm
+
+# Update paths for your system.
+w2v_model_path = "/home/gpu-server/Desktop/HaRdDrIvE/Amlan/GoogleNews-vectors-negative300.bin"
+input_directory = "/home/gpu-server/Desktop/HaRdDrIvE/Amlan/Earning_Calls_Full"
+output_directory = "/home/gpu-server/Desktop/HaRdDrIvE/Amlan/Keyword_Labels_Outputs/Summary"
+batch_size = 288020
+
+categories = {
+    "Innovation": ["innovation", "invention", "discovery", "research"],
+    "Productivity": ["productivity", "efficiency", "optimization", "automation"],
+    "Opportunity": ["opportunity", "advantage", "scope"],
+    "Risk": ["threat", "risk", "danger", "uncertainty"],
+    "Positive": ["positive", "good", "optimistic"],
+    "Business growth": ["revenue growth", "sales increase", "profit", "expansion", "business growth"],
+    "Regulatory risk": ["regulation", "compliance", "legislation", "policy", "regulatory risk"],
+    "Security risk": ["cyberattack", "weaponization", "fraud", "phishing", "security risk"],
+    "Environment risk": ["Power consumption", "energy", "environment risk"],
     "Negative": ["negative", "bad", "pessimistic", "disappointment"],
 }
 
