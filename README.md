@@ -9,7 +9,7 @@ Abstract: We construct forward-looking, time-varying measures of firm-level AI e
 Keywords: Artificial Intelligence, AI Exposure, Earnings Conference Calls, YAKE, Word2Vec, ChatGPT
 
 If you are using any of the codes please cite the paper
-Basu, Sakshi and Thapa, Chandra and Neupane, Biwesh and Basu, Amlan, Firm-level AI Exposure: Measurement, Determinants, and Pricing Implications (October 07, 2026). Available at SSRN: https://ssrn.com/abstract=7575518 or http://dx.doi.org/10.2139/ssrn.7575518
+**Basu, Sakshi and Thapa, Chandra and Neupane, Biwesh and Basu, Amlan, Firm-level AI Exposure: Measurement, Determinants, and Pricing Implications (October 07, 2026). Available at SSRN: https://ssrn.com/abstract=7575518 or http://dx.doi.org/10.2139/ssrn.7575518**
 
 There are 2 codes,
 1. Yake_Similar_Keywords.py to extract nearest keywords.
